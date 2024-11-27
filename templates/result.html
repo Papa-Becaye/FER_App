@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza or Pasta</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="text-center" style="padding-top: 10vh;
+                                    background-image: url('static/images/background.png');
+                                    background-size: cover;
+                                    margin: 0;
+                                    height: 100vh">
+        <div class="row">
+            <div class="col-3"></div>
+
+            <div class="col-6">
+                
+                <div class="background">
+                    <h1>{{ label }}</h1>
+                    <img src="{{ file_path }}" id="img" class="size" style="display: block;" alt="imgPlace">
+                    
+                    <form action="/" method="get" class="pt-2">
+                        <button type="submit" class="btn btn-danger">Try Again</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
